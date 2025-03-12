@@ -48,7 +48,7 @@ export default function BreakingBadQuotes() {
       ) : (
         quote && (
           <div className="frase-container">
-            <p className="frase-text">"{quote.quote}"</p>
+            <p className="frase-text">&quot;{quote.quote}&quot;</p>
             <p className="frase-author">- {quote.author}</p>
           </div>
         )
