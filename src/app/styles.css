@@ -1,0 +1,124 @@
+/* 🎨 Fondo degradado con tonos verdes oscuros y neón */
+body {
+  background: linear-gradient(135deg, #001100, #004400, #008800);
+  color: #16c60c;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* 📦 Contenedor principal */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  position: relative;
+}
+
+/* 🔥 Título con efecto de neón y animación de brillo */
+.title {
+  font-size: 2.5rem;
+  text-shadow: 0 0 10px #16c60c, 0 0 20px #0b660b, 0 0 30px #008800;
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #16c60c, 0 0 10px #0b660b;
+  }
+  to {
+    text-shadow: 0 0 15px #16c60c, 0 0 30px #0b660b;
+  }
+}
+
+/* 🧪 Icono de Breaking Bad con efecto sutil */
+.icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+  animation: spin 5s linear infinite;
+  filter: drop-shadow(0 0 10px #16c60c);
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* 📜 Contenedor de la Frase con efecto de brillo */
+.frase-container {
+  background: rgba(0, 50, 0, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 600px;
+  box-shadow: 0 0 20px rgba(22, 198, 12, 0.5);
+  margin: 20px auto;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.frase-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(22, 198, 12, 0.8);
+}
+
+/* ✍️ Texto de la Frase */
+.frase-text {
+  font-size: 1.8rem;
+  color: #16c60c;
+}
+
+/* ✒️ Autor de la Frase */
+.frase-author {
+  font-style: italic;
+  font-size: 1.4rem;
+  color: #0b660b;
+}
+
+/* 🔘 Botón con efecto neón y hover impresionante */
+.button {
+  background-color: #16c60c;
+  color: white;
+  border: 2px solid #0b660b;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  box-shadow: 0 0 10px #16c60c;
+}
+
+.button:hover {
+  background-color: #0b660b;
+  box-shadow: 0 0 20px #16c60c, 0 0 40px #0b660b;
+  transform: scale(1.1);
+}
+
+/* 🚀 Animaciones para mensajes de estado */
+.loading, .error {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.loading {
+  color: #16c60c;
+  animation: pulse 1.5s infinite alternate;
+}
+
+@keyframes pulse {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.error {
+  color: red;
+  text-shadow: 0 0 5px red, 0 0 10px darkred;
+}
